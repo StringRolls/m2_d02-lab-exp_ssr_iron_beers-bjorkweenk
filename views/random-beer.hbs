@@ -1,0 +1,16 @@
+<section class="randombeers">
+    <ul>
+        {{#each randomBeers}}
+          <img src={{this.image_url}}>
+          <p> {{ name }} </p>
+          <p>{{ description}} </p> 
+          <p>{{ food pairing}} </p> 
+          <p>{{ brewer tips}} </p> 
+          <p> {{ "WOW that is random" }}</p>
+        {{/each }}
+    </ul>
+
+      <a href="/"> Home </a>
+             <a href="/beers"> Beers</a>
+              <a href="/random-beer"> Random Beer </a>
+</section>
