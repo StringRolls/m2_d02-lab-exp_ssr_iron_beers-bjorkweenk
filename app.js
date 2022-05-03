@@ -40,16 +40,6 @@ app.get('/beers', (req, res) => {
     .catch(error => console.log(error))
 });
 
-/*punkAPI
-  .getRandom()
-  .then(responseFromAPI => {
-    app.get('/random', (req, res) => {r
-      const randomIndex = Math.floor(Math.random() * beersList.length);
-      const dataToBeSent = { randomBeers: beersList[randomIndex] };
-
-      res.render('hbs-files/randombeers', dataToBeSent)
-  }
-*/
 
 app.get('/random-beer', (req, res) => {
   punkAPI.getRandom()
