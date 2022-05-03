@@ -1,11 +1,11 @@
 <section class="randombeers">
     <ul>
-        {{#each randomBeers}}
+        {{#each randomBeer}}
           <img src={{this.image_url}}>
-          <p> {{ name }} </p>
-          <p>{{ description}} </p> 
-          <p>{{ food pairing}} </p> 
-          <p>{{ brewer tips}} </p> 
+          <p> {{name}} </p>
+          <p>{{description}} </p> 
+          <p>{{food-pairing}} </p> 
+          <p>{{brewer-tips}} </p> 
           <p> {{ "WOW that is random" }}</p>
         {{/each }}
     </ul>

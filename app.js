@@ -56,10 +56,6 @@ app.get('/random-beer', (req, res) => {
   .then((randomBeerApi) => {
     res.render('random-beer', {randomBeer: randomBeerApi});
   })
-  .catch(error =>{
-    console.log(" no random beer", error)
-    res.send("we dont have any beers you like")
-  })
 });
 
 
