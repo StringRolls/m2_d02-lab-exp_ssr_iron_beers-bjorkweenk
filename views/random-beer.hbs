@@ -1,14 +1,12 @@
 
-    <ul>
-        {{#each randomBeer}}
-          <img src={{this.image_url}} width="80" height="200">
+          <img src={{image_url}} width="80" height="200">
           <p> {{name}} </p>
           <p>{{description}} </p> 
           <p>{{food-pairing}} </p> 
           <p>{{brewer-tips}} </p> 
-          <p> {{ "WOW that is random" }}</p>
-        {{/each }}
-    </ul>
+          <p> {{tag-line}}</p>
+       
+  
 
       <a href="/"> Home </a>
       
